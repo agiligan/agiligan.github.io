@@ -306,19 +306,16 @@ h1 {
   font-weight: bold;
 }
 
+.card p,
 .project p,
 .course-card p {
   text-align: justify;
 }
 
-.project p:not(.label) {
+.project p:not(.label),
+.course-card p:not(.label) {
   color: #806b57;
 }
-
-.course-card p {
-  color: #99bc85;
-}
-
 .course-grid {
   padding-bottom: 80px;
 }
@@ -333,6 +330,17 @@ h1 {
 .course-card a {
   color: #a79277;
   font-weight: bold;
+}
+
+.course-card .output-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #806b57;
+  text-align: left;
+}
+
+.course-card .output-link:hover {
+  color: #99bc85;
 }
 
 /* IMAGE AND VIDEO POPUP */
